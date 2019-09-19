@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+
+<head>
+ 
+<meta charset="utf-8">
+  
+<meta http-equiv="Content-Type" content="text/html">
+  
+<title>Attendence</title>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<script type="text/javascript">
+function validator()
+{
+	var e=document.getElementById('id1').value;
+    var p=document.getElementById('id2').value;
+	
+if(e==null||e=="")
+{
+	alert("Enter the valid email!")
+	return false;
+}
+else if(p==null||p==""||p.length<4)
+{
+	alert("Enter the valid password!");
+	return false;
+}
+else
+	alert("Hello!!\n"+e);
+}
+		
+</script>
+</head>
+
+<body background="pic.jpg" height=100 width=100 >
+
+<header class="topbar">
+
+<nav>
+  
+<ul class="nav">
+ 
+<li><s>Attendence</s></li>
+     
+<li>
+ <a href="#">Home</a>
+
+</li>
+     
+<li><a href="#popup1">Login</a></li>
+
+<li><a href="#">About</a></li>
+  
+</ul>
+ 
+</nav>
+</header>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+<form name="logform" align="middle" action="login.php"  method="post">
+<div class="container">
+    <h1>Login</h1>
+    <a class="close" href="#">&times;</a>
+    <p>Please enter the details to login.</p>
+    <br>
+
+    
+    <label><b>Email</b></label> <br>
+    <input id="id1" type="email" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+   
+    <label><b>Password</b></label> <br>
+    <input id="id2" type="password" minlength="4" maxlength="10" placeholder="Enter Password" name="psw" required><br>
+  
+   <input type="checkbox">
+   Remember me
+   <a href=#>Forgot password?</a><br>
+   <button type="submit" class="loginbtn" onclick="validator()" >Login</button>
+     
+</div>
+</div>
+</div>
+
+</form>
+</body>
+</html>

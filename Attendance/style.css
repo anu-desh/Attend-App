@@ -1,0 +1,179 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+ 
+body { overflow-x: hidden; }
+p { font-size: 1.2em; line-height: 1.35em; color: #666; font-family: Helvetica, sans-serif; }
+ 
+/** page structure **/
+nav { 
+  position: relative;
+  width: 100%;
+  
+}
+/** navigation style **/
+ul.nav {
+  background-color: transparent;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #000000;
+}
+ 
+ul.nav > li {
+  display: block;
+  float: left;
+  line-height: 64px;
+  padding: 0 20px;
+  
+}
+
+s{
+  display:flex;
+  float: left;
+  position: relative;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #000000;
+  color:#769cb7
+}
+
+ ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #999;
+
+}
+ 
+ul.nav > li:hover > a  { color: #ececec; }
+
+input[type=email], input[type=password] {
+  align:center;
+  width: 75%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #D3D3D3;
+  outline: none;
+}
+
+.container p{
+	color:#fff;
+}
+.container {
+   position:relative;
+   width:100%;
+   border-radius:20px/20px;
+   border:2px solid #fff;
+   paddding:0px;
+   background:rgba(255,255,255,0.2);
+   margin :0 auto;
+   text-align:center;
+}
+
+/* Set a style for all buttons */
+button {
+
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  }
+
+button:hover {
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.15);
+  }
+  
+  button:active {
+    transform: translateY(1px);
+    box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.15);
+  }
+  
+button:focus {
+    outline: none;
+  }
+  
+.loginbtn {
+  padding: 14px 20px;
+  background-color:  #1338BE;
+}
+
+/* Float buttons and add width */
+.loginbtn {
+  float: center;
+  width: 50%;
+}
+/* Add padding to container elements */
+
+
+.overlay {
+  position: fixed;
+  height:100%;
+  width:100%;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+ transition: ease 1s;  
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 15px;
+  background: rgba(255,255,255,0.2);
+  top:10%;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 3s;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #fff;
+}
+.popup .container {
+  max-height: 30%;
+  overflow: auto;
+}
+
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+
+<head>
+ 
+<meta charset="utf-8">
+    
+<title>Attendence</title>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+
+</head>
+
+<body background="pic.jpg" height=100 width=100 >
+
+<header class="topbar">
+
+<nav>
+  
+<ul class="nav">
+ 
+<li><s>Attendence</s></li>
+     
+<li>
+ <a href="#">Home</a>
+
+</li>
+     
+<li><a href="#popup1">Login</a></li>
+
+<li><a href="#">About</a></li>
+  
+</ul>
+ 
+</nav>
+</header>
+
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+<form name="logform" align="middle" method="post">
+<div class="container">
+    <h1>Login</h1>
+    
+	<a class="close" href="#">&times;</a>
+    <p>Please enter the details to login.</p>
+    <br>
+    
+    <label><b>Email</b></label> <br>
+    <input id="id1" type="text" placeholder="Enter Email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+   
+    <label><b>Password</b></label> <br>
+    <input id="id2" type="password" minlength="4" placeholder="Enter Password" name="psw" required><br>
+  
+   <a href=#>Register</a><br>
+   <button id="button" class="loginbtn" type="submit" >Login</button>
+
+</div>
+</div>
+</div>
+
+</form>
+
+<div class=popup2 id="inactive">
+<div class="content">
+
+<a class="close2" href="#">&times;</a>
+<br><br>
+<center>
+<span id="error"></span>
+</center>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

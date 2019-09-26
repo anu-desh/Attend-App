@@ -4,13 +4,21 @@
 body { overflow-x: hidden; }
 p { font-size: 1.2em; line-height: 1.35em; color: #666; font-family: Helvetica, sans-serif; }
  
+<<<<<<< HEAD
 
+=======
+/** page structure **/
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 nav { 
   position: relative;
   width: 100%;
   
 }
+<<<<<<< HEAD
 
+=======
+/** navigation style **/
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 ul.nav {
   background-color: transparent;
   display: block;
@@ -55,7 +63,11 @@ s{
  
 ul.nav > li:hover > a  { color: #ececec; }
 
+<<<<<<< HEAD
 input[type=text], input[type=password] {
+=======
+input[type=email], input[type=password] {
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
   align:center;
   width: 75%;
   padding: 15px;
@@ -83,7 +95,11 @@ input[type=email]:focus, input[type=password]:focus {
    text-align:center;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Set a style for all buttons */
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 button {
 
   position: relative;
@@ -117,11 +133,19 @@ button:focus {
   background-color:  #1338BE;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Float buttons and add width */
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 .loginbtn {
   float: center;
   width: 50%;
 }
+<<<<<<< HEAD
+=======
+/* Add padding to container elements */
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 
 
 .overlay {
@@ -133,7 +157,10 @@ button:focus {
   opacity: 0;
  transition: ease 1s;  
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -151,7 +178,11 @@ button:focus {
 }
 
 
+<<<<<<< HEAD
 .popup  .close{
+=======
+.popup .close {
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
   position: absolute;
   top: 20px;
   right: 30px;
@@ -160,6 +191,7 @@ button:focus {
   font-weight: bold;
   text-decoration: none;
   color: #333;
+<<<<<<< HEAD
   overflow:auto;
 }
 
@@ -231,6 +263,17 @@ button:focus {
 
 
 
+=======
+}
+.popup .close:hover {
+  color: #fff;
+}
+.popup .container {
+  max-height: 30%;
+  overflow: auto;
+}
+
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
  
 
 

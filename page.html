@@ -5,11 +5,41 @@
 <head>
  
 <meta charset="utf-8">
+<<<<<<< HEAD
     
 <title>Attendence</title>
 <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 <link rel="stylesheet" type="text/css" media="all" href="style.css">
 
+=======
+  
+<meta http-equiv="Content-Type" content="text/html">
+  
+<title>Attendence</title>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<script type="text/javascript">
+function validator()
+{
+	var e=document.getElementById('id1').value;
+    var p=document.getElementById('id2').value;
+	
+if(e==null||e=="")
+{
+	alert("Enter the valid email!")
+	return false;
+}
+else if(p==null||p==""||p.length<4)
+{
+	alert("Enter the valid password!");
+	return false;
+}
+else
+	alert("Hello!!\n"+e);
+}
+		
+</script>
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 </head>
 
 <body background="pic.jpg" height=100 width=100 >
@@ -36,6 +66,7 @@
 </nav>
 </header>
 
+<<<<<<< HEAD
 
 <div id="popup1" class="overlay">
 	<div class="popup">
@@ -56,11 +87,35 @@
    <a href=#>Register</a><br>
    <button id="button" class="loginbtn" type="submit" >Login</button>
 
+=======
+<div id="popup1" class="overlay">
+	<div class="popup">
+<form name="logform" align="middle" action="login.php"  method="post">
+<div class="container">
+    <h1>Login</h1>
+    <a class="close" href="#">&times;</a>
+    <p>Please enter the details to login.</p>
+    <br>
+
+    
+    <label><b>Email</b></label> <br>
+    <input id="id1" type="email" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+   
+    <label><b>Password</b></label> <br>
+    <input id="id2" type="password" minlength="4" maxlength="10" placeholder="Enter Password" name="psw" required><br>
+  
+   <input type="checkbox">
+   Remember me
+   <a href=#>Forgot password?</a><br>
+   <button type="submit" class="loginbtn" onclick="validator()" >Login</button>
+     
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 </div>
 </div>
 </div>
 
 </form>
+<<<<<<< HEAD
 
 <div class=popup2 id="inactive">
 <div class="content">
@@ -82,4 +137,7 @@
 
 </body>
 <script src="script.js"></script>
+=======
+</body>
+>>>>>>> 13506a76fc0da5fd56406773b1c5b798b21c31cf
 </html>
